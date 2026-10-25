@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Contactez Memora pour trouver ou personnaliser votre cadeau."><title>Contact — Memora</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">M</span><span>memora<span class="brand-dot">.</span><small>LE PLAISIR D’OFFRIR</small></span></a><button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button><nav class="main-nav" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="produits.html">Nos idées cadeaux</a><a href="produit-vedette.html">Personnalisation</a><a href="a-propos.html">À propos</a><a class="active" href="contact.html">Contact</a></nav><a class="header-cta" href="contact.html">Trouver un cadeau <span>↗</span></a></header>
+<main>
+<section class="page-hero compact"><p class="eyebrow">Nous sommes à votre écoute</p><h1>Parlons de votre <em>idée cadeau.</em></h1><p>Partagez l’occasion, la personne à gâter et vos envies. Les coordonnées officielles de Memora sont à ajouter avant la mise en ligne publique.</p><div class="page-hero-flower">♡</div></section>
+<section class="contact-layout section">
+<div class="contact-intro"><p class="eyebrow">Restons en contact</p><h2>Une petite question ?<br><em>Un grand plaisir.</em></h2><p>Pour le moment, ce formulaire sert de démonstration visuelle : il ne transmet pas les messages. Ajoutez ensuite votre adresse e-mail ou votre numéro WhatsApp officiel pour recevoir les demandes.</p><div class="contact-detail"><span>✉</span><div><strong>E-mail</strong><p>Adresse à renseigner</p></div></div><div class="contact-detail"><span>⌂</span><div><strong>Zone de livraison prévue</strong><p>Toute la Tunisie</p></div></div><div class="contact-detail"><span>◷</span><div><strong>Disponibilité</strong><p>Horaires à confirmer</p></div></div></div>
+<form class="contact-form" id="contact-form"><p class="eyebrow">Votre message</p><h2>Préparons votre attention.</h2><div class="form-row"><label for="name">Votre nom</label><input id="name" name="name" type="text" placeholder="Ex.Nour" required></div>
+<div class="form-row">
+<label for="email">Votre e-mail</label>
+<input id="email" name="email" type="email" placeholder="vous@exemple.com" required></div>
+<div class="form-row"><label for="occasion">Quelle est l’occasion ?</label>
+<select id="occasion" name="occasion" required>
+    <option value="">Choisir une occasion</option>
+    <option>Anniversaire</option>
+    <option>Remerciement</option>
+    <option>Fête ou célébration</option>
+    <option>Saint-Valentin</option>
+    <option>Juste pour faire plaisir</option>
+    <option>Autre occasion</option></select>
+</div>
+<div class="form-row">
+    <label for="message">Votre idée</label>
+    <textarea id="message" name="message" rows="4" placeholder="Pour qui est le cadeau ? Avez-vous une idée en tête ?" required></textarea>
+</div>
+    <button class="button button-dark" type="submit">Envoyer<span>↗</span></button>
+    <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+    <small>Démo uniquement : aucune donnée n’est envoyée ni enregistrée.</small></form>
+</section>
+</main>
+<footer class="site-footer"><a class="brand brand-footer" href="index.html">
+    <span class="brand-mark">M</span><span>memora<span class="brand-dot">.</span>
+    <small>LE PLAISIR D’OFFRIR</small>
+</span></a><p>Des attentions qui deviennent des souvenirs.</p>
+<div class="footer-links">
+    <a href="produits.html">Nos idées</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="contact.html">Contact</a></div>
+    <small class="copyright">© 
+    <span data-year></span> Memora. Tous droits réservés.</small></footer>
+</body></html>

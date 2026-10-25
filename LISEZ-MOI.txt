@@ -1,0 +1,28 @@
+MEMORA — SITE WEB DE DÉMONSTRATION
+
+Fichiers :
+- index.html : page d'accueil
+- produits.html : idées cadeaux et filtres
+- produit-vedette.html : personnalisation
+- a-propos.html : présentation de Memora
+- contact.html : formulaire de démonstration
+- style.css : couleurs, mise en page et adaptation mobile
+- script.js : menu mobile, filtre et confirmation de formulaire
+- images/ : ajoutez ici les images réelles si disponibles
+
+IMPORTANT :
+Le BMC ne contenait pas de liste de produits, de prix, de numéro WhatsApp,
+d'adresse e-mail officielle ni d'adresse physique. Le site n'invente donc pas
+ces informations. Les coordonnées sont à compléter.
+
+Le formulaire ne transmet pas de message et aucun paiement, panier réel,
+stock ou commande n'est connecté. Il s'agit d'une maquette front-end.
+Pour une vraie boutique en ligne, il faudra ensuite ajouter un système de
+commande, de paiement et de gestion du stock.
+
+LOGO :
+Le chemin Windows fourni dans le brief pointe vers votre ordinateur et ne
+peut pas être utilisé directement par le site. Copiez le fichier logo dans
+images/ (par exemple images/logo-memora.jpg), puis modifiez le HTML pour
+afficher ce fichier, ou envoyez le logo dans la conversation pour que le site
+puisse être adapté à sa forme et à ses couleurs.
