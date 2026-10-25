@@ -12,3 +12,22 @@ if (!SUPABASE_URL || SUPABASE_URL.includes('VOTRE_')) {
 
 // Création et exportation globale du client Supabase
 window.supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+// Intercepter l'envoi du formulaire
+document.querySelector('form').addEventListener('submit', async (e) => {
+  e.preventDefault(); // Empêcher le rechargement de la page
+
+  // Récupérer les valeurs saisies par le client
+  const nom = document.querySelector('#nom').value;
+  const telephone = document.querySelector('#telephone').value;
+
+  // Envoyer à la table 'orders' dans Supabase
+  const { data, error } = await supabase
+    .from('orders')
+    .insert([{ nom: nom, telephone: telephone }]);
+
+  if (error) {
+    alert('Erreur lors de la commande : ' + error.message);
+  } else {
+    alert('Commande envoyée avec succès !');
+  }
+});
