@@ -17,7 +17,6 @@ document.querySelectorAll("[data-year]").forEach((element) => {
 
 // Filtre les cartes sur la page des idées cadeaux.
 const filterButtons = document.querySelectorAll(".filter-btn");
-const productCards = document.querySelectorAll(".product-card");
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -26,7 +25,7 @@ filterButtons.forEach((button) => {
     filterButtons.forEach((item) => item.classList.remove("active"));
     button.classList.add("active");
 
-    productCards.forEach((card) => {
+    document.querySelectorAll(".product-card").forEach((card) => {
       const shouldShow = selectedFilter === "all" || card.dataset.category === selectedFilter;
       card.hidden = !shouldShow;
     });
